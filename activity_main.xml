@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text=" Question 1. Name  the main characters in a story about witches and wizards"
+            />
+        <CheckBox
+            android:id="@+id/Hermione"
+            android:text= "Hermione"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  >  </CheckBox>
+        <CheckBox
+            android:id="@+id/Harry"
+            android:text= "Harry"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  >  </CheckBox>
+        <CheckBox
+            android:id="@+id/Ron"
+            android:textSize="20sp"
+            android:text= "Ron"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  >  </CheckBox>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text=" Question 2. Who dropped harry off with the dursleys?">
+        </TextView>
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:id="@+id/loud"
+    android:layout_height="wrap_content">
+        <RadioButton
+            android:textSize="20sp"
+            android:id="@+id/hagrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hagrid"
+            android:textAppearance="?android:textAppearanceMedium"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:clickable="false"
+            android:layout_height="wrap_content"
+            android:text="snape"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+    </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text=" Question 3. Who was famous for saying the fan favorite line: Turn to page 394?"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:id="@+id/group"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="the dark lord"
+            android:clickable="false"
+            android:id="@+id/darklord"
+            android:textAppearance="?android:textAppearanceMedium" />
+        <RadioButton
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dumbledore"
+            android:text="Dumbledore"
+            android:clickable="false"
+
+            android:textAppearance="?android:textAppearanceMedium" />
+        <RadioButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Snape"
+            android:id="@+id/hero"
+            android:textSize="20sp"
+            android:textAppearance="?android:textAppearanceMedium" />
+        <TextView
+            android:text=" Question 4. Give the last name of the author of the harry potter series lower case spelling:"
+            android:layout_width="wrap_content"
+            android:id="@+id/Edit_Text"
+            android:textSize="20sp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:hint="Enter Answer"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:id="@+id/edittextanswerbutton"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:text="Click me to submit your answers"
+            android:id="@+id/lastscore"
+            android:onClick="finalscore"
+            android:textSize="20sp"/>
+    </LinearLayout>
+</ScrollView>
